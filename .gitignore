@@ -1,6 +1,8 @@
 # sandpaper files
 episodes/*html
-episodes/rendered/*pdf
+episodes/inflammation-*pdf
+episodes/rendered/*
+episodes/results/*
 site/*
 !site/README.md
 

@@ -150,7 +150,7 @@ weight_kg <- 55
 
 Once a variable is created, we can use the variable name to refer to the value it was assigned. The variable name now acts as a tag. Whenever R reads that tag (`weight_kg`), it substitutes the value (`55`).
 
-<img src="../fig/tag-variables.svg" alt="Variables as Tags" />
+<img src="fig/tag-variables.svg" alt="Variables as Tags" />
 
 To see the value of a variable, we can print it by typing the name of the variable and hitting <kbd>Return</kbd> (or <kbd>Enter</kbd>).
 In general, R will print to the console any object returned by a function or operation *unless* we assign it to a variable.
@@ -166,7 +166,7 @@ We can treat our variable like a regular number, and do arithmetic with it:
 2.2 * weight_kg
 ```
 
-<img src="../fig/arithmetic-variables.svg" alt="Variables as Tags" />
+<img src="fig/arithmetic-variables.svg" alt="Variables as Tags" />
 
 ```{callout "137:1-142:12"}
 #' ## Commenting
@@ -197,7 +197,7 @@ weight_kg
 #' 
 ```
 
-<img src="../fig/reassign-variables.svg" alt="Reassigning Variables" />
+<img src="fig/reassign-variables.svg" alt="Reassigning Variables" />
 
 Assigning a new value to a variable breaks the connection with the old value; R forgets that number and applies the variable name to the new value.
 
@@ -216,7 +216,7 @@ weight_lb
 In words, we're asking R to look up the value we tagged `weight_kg`,
 multiply it by 2.2, and tag the result with the name `weight_lb`:
 
-<img src="../fig/new-variables.svg" alt="Creating Another Variable" />
+<img src="fig/new-variables.svg" alt="Creating Another Variable" />
 
 If we now change the value of `weight_kg`:
 
@@ -228,7 +228,7 @@ weight_kg
 weight_lb
 ```
 
-<img src="../fig/memory-variables.svg" alt="Updating a Variable" />
+<img src="fig/memory-variables.svg" alt="Updating a Variable" />
 
 Since `weight_lb` doesn't "remember" where its value came from, it isn't automatically updated when `weight_kg` changes.
 This is different from the way spreadsheets work.
@@ -276,14 +276,14 @@ mass <- 47.5
 age <- 122
 #' ```
 #' 
-#' <img src="../fig/mass-age-assign-1.svg" alt="Assigning Variables" />
+#' <img src="fig/mass-age-assign-1.svg" alt="Assigning Variables" />
 #' 
 #' ```{r}
 mass <- mass * 2.0
 age <- age - 20
 #' ```
 #' 
-#' <img src="../fig/mass-age-assign-2.svg" alt="Assigning Variables" />
+#' <img src="fig/mass-age-assign-2.svg" alt="Assigning Variables" />
 ````
 
 ### Manipulating Data
@@ -457,7 +457,7 @@ For every column in the data frame, the function "summary" calculates: the minim
 What if we need the maximum inflammation for all patients, or the average for each day?
 As the diagram below shows, we want to perform the operation across a margin of the data frame:
 
-<img src="../fig/r-operations-across-margins.svg" alt="Operations Across Margins" />
+<img src="fig/r-operations-across-margins.svg" alt="Operations Across Margins" />
 
 To support this, we can use the `apply` function.
 
