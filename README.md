@@ -5,6 +5,15 @@ a real repository. It's derived from [Programming With
 R](https://swcarpentry.github.io/r-novice-inflammation) and hopefully, I can
 get it to a point where it will be identical without using Jekyll.
 
+To render this lesson, first clone it and then use [{sandpaper}] to render it
+
+```r
+usethis::create_from_github("zkamvar/miniature-octo-waffle", "~/Desktop")
+## you will be moved to that directory
+
+sandpaper::build_lesson()
+``` 
+
 I converted this site by using the [{dovetail}] package:
 
 ```r
