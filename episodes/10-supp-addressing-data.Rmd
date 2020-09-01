@@ -1,15 +1,7 @@
 ---
-title: "Addressing Data"
+title: Addressing Data
 teaching: 20
 exercises: 0
-questions:
-- "What are the different methods for accessing parts of a data frame?"
-objectives:
-- "Understand the three different ways R can address data inside a data frame."
-- "Combine different methods for addressing data with the assignment operator to update subsets of data."
-keypoints:
-- "Data in data frames can be addressed by index (subsetting), by logical vector, or by name (columns only)."
-- "Use the `$` operator to address a column by name."
 source: Rmd
 ---
 
@@ -17,6 +9,15 @@ source: Rmd
 library('dovetail')
 
 # knitr_fig_path."10-supp-addressing-data-")
+```
+
+```{objectives}
+#' - Understand the three different ways R can address data inside a data frame.
+#' - Combine different methods for addressing data with the assignment operator to update subsets of data.
+```
+
+```{questions}
+#' - What are the different methods for accessing parts of a data frame?
 ```
 
 R is a powerful language for data manipulation.
@@ -295,5 +296,10 @@ dat[dat$Gender == 'F', ]$Gender <- 'f'
 ````
 
 {% include links.md %}
+
+```{keypoints}
+#' - Data in data frames can be addressed by index (subsetting), by logical vector, or by name (columns only).
+#' - Use the `$` operator to address a column by name.
+```
 
 

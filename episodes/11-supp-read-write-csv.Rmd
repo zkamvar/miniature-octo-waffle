@@ -1,18 +1,7 @@
 ---
-title: "Reading and Writing CSV Files"
+title: Reading and Writing CSV Files
 teaching: 30
 exercises: 0
-questions:
-- "How do I read data from a CSV file into R?"
-- "How do I write data to a CSV file?"
-objectives:
-- "Read in a .csv, and explore the arguments of the csv reader."
-- "Write the altered data set to a new .csv, and explore the arguments."
-keypoints:
-- "Import data from a .csv file using the  `read.csv(...)` function."
-- "Understand some of the key arguments available for importing the data properly, including `header`, `stringsAsFactors`, `as.is`, and `strip.white`."
-- "Write data to a new .csv file using the `write.csv(...)` function"
-- "Understand some of the key arguments available for exporting the data properly, such as `row.names`, `col.names`, and `na`."
 source: Rmd
 ---
 
@@ -20,6 +9,16 @@ source: Rmd
 library('dovetail')
 
 # knitr_fig_path."11-supp-read-write-csv-")
+```
+
+```{objectives}
+#' - Read in a .csv, and explore the arguments of the csv reader.
+#' - Write the altered data set to a new .csv, and explore the arguments.
+```
+
+```{questions}
+#' - How do I read data from a CSV file into R?
+#' - How do I write data to a CSV file?
 ```
 
 The most common way that scientists store data is in Excel spreadsheets.
@@ -269,5 +268,12 @@ And we see:
 <img src="fig/01-supp-csv-with-special-NA.png" alt="csv written with -9999 as NA" />
 
 {% include links.md %}
+
+```{keypoints}
+#' - Import data from a .csv file using the  `read.csv(...)` function.
+#' - Understand some of the key arguments available for importing the data properly, including `header`, `stringsAsFactors`, `as.is`, and `strip.white`.
+#' - Write data to a new .csv file using the `write.csv(...)` function
+#' - Understand some of the key arguments available for exporting the data properly, such as `row.names`, `col.names`, and `na`.
+```
 
 

@@ -1,32 +1,7 @@
 ---
-title: "Analyzing Patient Data"
+title: Analyzing Patient Data
 teaching: 45
 exercises: 0
-questions:
-- "How do I read data into R?"
-- "How do I assign variables?"
-- "What is a data frame?"
-- "How do I access subsets of a data frame?"
-- "How do I calculate simple statistics like mean and median?"
-- "Where can I get help?"
-- "How can I plot my data?"
-objectives:
-- "Read tabular data from a file into a program."
-- "Assign values to variables."
-- "Select individual values and subsections from data."
-- "Perform operations on a data frame of data."
-- "Display simple graphs."
-keypoints:
-- "Use `variable <- value` to assign a value to a variable in order to record it in memory."
-- "Objects are created on demand whenever a value is assigned to them."
-- "The function `dim` gives the dimensions of a data frame."
-- "Use `object[x, y]` to select a single element from a data frame."
-- "Use `from:to` to specify a sequence that includes the indices from `from` to `to`."
-- "All the indexing and subsetting that works on data frames also works on vectors."
-- "Use `#` to add comments to programs."
-- "Use `mean`, `max`, `min` and `sd` to calculate simple statistics."
-- "Use `apply` to calculate statistics across the rows or columns of a data frame."
-- "Use `plot` to create simple visualizations."
 source: Rmd
 ---
 
@@ -34,6 +9,24 @@ source: Rmd
 library('dovetail')
 
 # knitr_fig_path."01-starting-with-data-")
+```
+
+```{objectives}
+#' - Read tabular data from a file into a program.
+#' - Assign values to variables.
+#' - Select individual values and subsections from data.
+#' - Perform operations on a data frame of data.
+#' - Display simple graphs.
+```
+
+```{questions}
+#' - How do I read data into R?
+#' - How do I assign variables?
+#' - What is a data frame?
+#' - How do I access subsets of a data frame?
+#' - How do I calculate simple statistics like mean and median?
+#' - Where can I get help?
+#' - How can I plot my data?
 ```
 
 We are studying inflammation in patients who have been given a new treatment for arthritis,
@@ -644,5 +637,18 @@ plot(sd_day_inflammation)
 ````
 
 {% include links.md %}
+
+```{keypoints}
+#' - Use `variable <- value` to assign a value to a variable in order to record it in memory.
+#' - Objects are created on demand whenever a value is assigned to them.
+#' - The function `dim` gives the dimensions of a data frame.
+#' - Use `object[x, y]` to select a single element from a data frame.
+#' - Use `from:to` to specify a sequence that includes the indices from `from` to `to`.
+#' - All the indexing and subsetting that works on data frames also works on vectors.
+#' - Use `#` to add comments to programs.
+#' - Use `mean`, `max`, `min` and `sd` to calculate simple statistics.
+#' - Use `apply` to calculate statistics across the rows or columns of a data frame.
+#' - Use `plot` to create simple visualizations.
+```
 
 

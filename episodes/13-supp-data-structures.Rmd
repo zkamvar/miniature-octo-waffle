@@ -1,25 +1,7 @@
 ---
-title: "Data Types and Structures"
+title: Data Types and Structures
 teaching: 45
 exercises: 0
-questions:
-- "What are the different data types in R?"
-- "What are the different data structures in R?"
-- "How do I access data within the various data structures?"
-objectives:
-- "Expose learners to the different data types in R and show how these data
-  types are used in data structures."
-- "Learn how to create vectors of different types."
-- "Be able to check the type of vector."
-- "Learn about missing data and other special values."
-- "Get familiar with the different data structures (lists, matrices, data frames)."
-keypoints:
-- "R's basic data types are character, numeric, integer, complex, and logical."
-- "R's basic data structures include the vector, list, matrix, data frame, and 
-  factors. Some of these structures require that all members be of the same data 
-  type (e.g. vectors, matrices) while others permit multiple data types (e.g.
-  lists, data frames)."
-- "Objects may have attributes, such as name, dimension, and class."
 source: Rmd
 ---
 
@@ -27,6 +9,20 @@ source: Rmd
 library('dovetail')
 
 # knitr_fig_path."13-supp-data-structures-")
+```
+
+```{objectives}
+#' - Expose learners to the different data types in R and show how these data types are used in data structures.
+#' - Learn how to create vectors of different types.
+#' - Be able to check the type of vector.
+#' - Learn about missing data and other special values.
+#' - Get familiar with the different data structures (lists, matrices, data frames).
+```
+
+```{questions}
+#' - What are the different data types in R?
+#' - What are the different data structures in R?
+#' - How do I access data within the various data structures?
 ```
 
 ### Understanding Basic Data Types and Data Structures in R
@@ -553,5 +549,11 @@ str(iris)
 ````
 
 {% include links.md %}
+
+```{keypoints}
+#' - R's basic data types are character, numeric, integer, complex, and logical.
+#' - R's basic data structures include the vector, list, matrix, data frame, and factors. Some of these structures require that all members be of the same data type (e.g. vectors, matrices) while others permit multiple data types (e.g. lists, data frames).
+#' - Objects may have attributes, such as name, dimension, and class.
+```
 
 

@@ -1,26 +1,7 @@
 ---
-title: "Creating Functions"
+title: Creating Functions
 teaching: 30
 exercises: 0
-questions:
-- "How do I make a function?"
-- "How can I test my functions?"
-- "How should I document my code?"
-objectives:
-- "Define a function that takes arguments."
-- "Return a value from a function."
-- "Test a function."
-- "Set default values for function arguments."
-- "Explain why we should divide programs into small, single-purpose functions."
-keypoints:
-- "Define a function using `name <- function(...args...) {...body...}`."
-- "Call a function using `name(...values...)`."
-- "R looks for variables in the current stack frame before looking for them at the top level."
-- "Use `help(thing)` to view help for something."
-- "Put comments at the beginning of functions to provide help for that function."
-- "Annotate your code!"
-- "Specify default values for arguments when defining a function using `name = value` in the argument list."
-- "Arguments can be passed by matching based on name, by position, or by omitting them (in which case the default value is used)."
 source: Rmd
 ---
 
@@ -28,6 +9,20 @@ source: Rmd
 library('dovetail')
 
 # knitr_fig_path."02-func-R-")
+```
+
+```{objectives}
+#' - Define a function that takes arguments.
+#' - Return a value from a function.
+#' - Test a function.
+#' - Set default values for function arguments.
+#' - Explain why we should divide programs into small, single-purpose functions.
+```
+
+```{questions}
+#' - How do I make a function?
+#' - How can I test my functions?
+#' - How should I document my code?
 ```
 
 If we only had one data set to analyze, it would probably be faster to load the file into a spreadsheet and use that to plot some simple statistics.
@@ -556,5 +551,16 @@ max(answer)
 ```
 
 {% include links.md %}
+
+```{keypoints}
+#' - Define a function using `name <- function(...args...) {...body...}`.
+#' - Call a function using `name(...values...)`.
+#' - R looks for variables in the current stack frame before looking for them at the top level.
+#' - Use `help(thing)` to view help for something.
+#' - Put comments at the beginning of functions to provide help for that function.
+#' - Annotate your code!
+#' - Specify default values for arguments when defining a function using `name = value` in the argument list.
+#' - Arguments can be passed by matching based on name, by position, or by omitting them (in which case the default value is used).
+```
 
 

@@ -1,30 +1,7 @@
 ---
-title: "Best Practices for Writing R Code"
+title: Best Practices for Writing R Code
 teaching: 10
 exercises: 0
-questions:
-- "How can I write R code that other people can understand and use?"
-objectives:
-- "Describe changes made to code for future reference."
-- "Understand the importance about requirements and dependencies for your code."
-- "Know when to use setwd()."
-- "To identify and segregate distinct components in your code using # or #-."
-- "Additional best practice recommendations."
-keypoints:
-- "Start each program with a description of what it does."
-- "Then load all required packages."
-- "Consider what working directory you are in when sourcing a script."
-- "Use comments to mark off sections of code."
-- "Put function definitions at the top of your file, or in a separate file if there are many."
-- "Name and style code consistently."
-- "Break code into small, discrete pieces."
-- "Factor out common operations rather than repeating them."
-- "Keep all of the source files for a project in one directory and use relative paths to access them."
-- "Keep track of the memory used by your program."
-- "Always start with a clean environment instead of saving the workspace."
-- "Keep track of session information in your project folder."
-- "Have someone else review your code."
-- "Use version control."
 source: Rmd
 ---
 
@@ -32,6 +9,18 @@ source: Rmd
 library('dovetail')
 
 # knitr_fig_path."06-best-practices-R-")
+```
+
+```{objectives}
+#' - Describe changes made to code for future reference.
+#' - Understand the importance about requirements and dependencies for your code.
+#' - Know when to use setwd().
+#' - To identify and segregate distinct components in your code using # or #-.
+#' - Additional best practice recommendations.
+```
+
+```{questions}
+#' - How can I write R code that other people can understand and use?
 ```
 
 ### Keep track of who wrote your code and its intended purpose
@@ -160,5 +149,22 @@ cat inflammation_fxns.R
 ````
 
 {% include links.md %}
+
+```{keypoints}
+#' - Start each program with a description of what it does.
+#' - Then load all required packages.
+#' - Consider what working directory you are in when sourcing a script.
+#' - Use comments to mark off sections of code.
+#' - Put function definitions at the top of your file, or in a separate file if there are many.
+#' - Name and style code consistently.
+#' - Break code into small, discrete pieces.
+#' - Factor out common operations rather than repeating them.
+#' - Keep all of the source files for a project in one directory and use relative paths to access them.
+#' - Keep track of the memory used by your program.
+#' - Always start with a clean environment instead of saving the workspace.
+#' - Keep track of session information in your project folder.
+#' - Have someone else review your code.
+#' - Use version control.
+```
 
 

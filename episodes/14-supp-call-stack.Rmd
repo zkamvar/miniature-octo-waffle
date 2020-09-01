@@ -1,17 +1,7 @@
 ---
-title: "The Call Stack"
+title: The Call Stack
 teaching: 15
 exercises: 0
-questions:
-- "What is the call stack, and how does R know what order to do things in?"
-- "How does scope work in R?"
-objectives:
-- "Explain how stack frames are created and destroyed as functions are called."
-- "Correctly identify the scope of a function's local variables."
-- "Explain variable scope in terms of the call stack."
-keypoints:
-- "R keeps track of active function calls using a call stack comprised of stack frames."
-- "Only global variables and variables in the current stack frame can be accessed directly."
 source: Rmd
 ---
 
@@ -19,6 +9,17 @@ source: Rmd
 library('dovetail')
 
 # knitr_fig_path."14-supp-call-stack-")
+```
+
+```{objectives}
+#' - Explain how stack frames are created and destroyed as functions are called.
+#' - Correctly identify the scope of a function's local variables.
+#' - Explain variable scope in terms of the call stack.
+```
+
+```{questions}
+#' - What is the call stack, and how does R know what order to do things in?
+#' - How does scope work in R?
 ```
 
 ### The Call Stack
@@ -132,5 +133,10 @@ result <- edges(highlight(inner_vec, outer_vec))
 ````
 
 {% include links.md %}
+
+```{keypoints}
+#' - R keeps track of active function calls using a call stack comprised of stack frames.
+#' - Only global variables and variables in the current stack frame can be accessed directly.
+```
 
 

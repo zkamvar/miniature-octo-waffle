@@ -1,17 +1,7 @@
 ---
-title: "Loops in R"
+title: Loops in R
 teaching: 30
 exercises: 0
-questions:
-- "How can I do the same thing multiple times more efficiently in R?"
-- "What is vectorization?"
-- "Should I use a loop or an `apply` statement?"
-objectives:
-- "Compare loops and vectorized operations."
-- "Use the apply family of functions."
-keypoints:
-- "Where possible, use vectorized operations instead of `for` loops to make code faster and more concise."
-- "Use functions such as `apply` instead of `for` loops to operate on the values in a data structure."
 source: Rmd
 ---
 
@@ -19,6 +9,17 @@ source: Rmd
 library('dovetail')
 
 # knitr_fig_path."15-supp-loops-in-depth-")
+```
+
+```{objectives}
+#' - Compare loops and vectorized operations.
+#' - Use the apply family of functions.
+```
+
+```{questions}
+#' - How can I do the same thing multiple times more efficiently in R?
+#' - What is vectorization?
+#' - Should I use a loop or an `apply` statement?
 ```
 
 In R you have multiple options when repeating calculations: vectorized operations, `for` loops, and `apply` functions.
@@ -184,5 +185,10 @@ Note that `apply` handles these memory allocation issues for you, but then you h
 At its heart, `apply` is just a `for` loop with extra convenience.
 
 {% include links.md %}
+
+```{keypoints}
+#' - Where possible, use vectorized operations instead of `for` loops to make code faster and more concise.
+#' - Use functions such as `apply` instead of `for` loops to operate on the values in a data structure.
+```
 
 

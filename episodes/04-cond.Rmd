@@ -1,22 +1,7 @@
 ---
-title: "Making Choices"
+title: Making Choices
 teaching: 30
 exercises: 0
-questions:
-- "How do I make choices using `if` and `else` statements?"
-- "How do I compare values?"
-- "How do I save my plots to a PDF file?"
-objectives:
-- "Save plot(s) in a PDF file."
-- "Write conditional statements with `if` and `else`."
-- "Correctly evaluate expressions containing `&&` ('and') and `||` ('or')."
-keypoints:
-- "Save a plot in a pdf file using `pdf(\"name.pdf\")` and stop writing to the pdf file with `dev.off()`."
-- "Use `if (condition)` to start a conditional statement, `else if (condition)` to provide additional tests, and `else` to provide a default."
-- "The bodies of conditional statements must be surrounded by curly braces `{ }`."
-- "Use `==` to test for equality."
-- "`X && Y` is only true if both X and Y are true."
-- "`X || Y` is true if either X or Y, or both, are true."
 source: Rmd
 ---
 
@@ -24,6 +9,18 @@ source: Rmd
 library('dovetail')
 
 # knitr_fig_path."04-cond-")
+```
+
+```{objectives}
+#' - Save plot(s) in a PDF file.
+#' - Write conditional statements with `if` and `else`.
+#' - Correctly evaluate expressions containing `&&` ('and') and `||` ('or').
+```
+
+```{questions}
+#' - How do I make choices using `if` and `else` statements?
+#' - How do I compare values?
+#' - How do I save my plots to a PDF file?
 ```
 
 Our previous lessons have shown us how to manipulate data, define our own functions, and repeat things.
@@ -471,5 +468,14 @@ analyze <- function(filename, output = NULL) {
 ````
 
 {% include links.md %}
+
+```{keypoints}
+#' - Save a plot in a pdf file using `pdf("name.pdf")` and stop writing to the pdf file with `dev.off()`.
+#' - Use `if (condition)` to start a conditional statement, `else if (condition)` to provide additional tests, and `else` to provide a default.
+#' - The bodies of conditional statements must be surrounded by curly braces `{ }`.
+#' - Use `==` to test for equality.
+#' - `X && Y` is only true if both X and Y are true.
+#' - `X || Y` is true if either X or Y, or both, are true.
+```
 
 

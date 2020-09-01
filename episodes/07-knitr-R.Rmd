@@ -1,19 +1,7 @@
 ---
-title: "Dynamic Reports with knitr"
+title: Dynamic Reports with knitr
 teaching: 20
 exercises: 0
-questions:
-- "How can I put my text, code, and results all in one document?"
-- "How do I use `knitr`?"
-- "How do I write in Markdown?"
-objectives:
-- "Understand the value of `knitr` for generating dynamic documents that include text, code, and results."
-- "Control basic formatting using markdown syntax."
-- "Be able to create, edit, and compile an .Rmd document including code chunks and inline code."
-keypoints:
-- "Use knitr to generate reports that combine text, code, and results."
-- "Use Markdown to format text."
-- "Put code in blocks delimited by triple back quotes followed by `{r}`."
 source: Rmd
 ---
 
@@ -21,6 +9,18 @@ source: Rmd
 library('dovetail')
 
 # knitr_fig_path."07-knitr-R-")
+```
+
+```{objectives}
+#' - Understand the value of `knitr` for generating dynamic documents that include text, code, and results.
+#' - Control basic formatting using markdown syntax.
+#' - Be able to create, edit, and compile an .Rmd document including code chunks and inline code.
+```
+
+```{questions}
+#' - How can I put my text, code, and results all in one document?
+#' - How do I use `knitr`?
+#' - How do I write in Markdown?
 ```
 
 `knitr` is an R package that allows you to organize your notes, code, and results in a single document. It's a great tool for "literate programming" -- the idea that your code should be readable by humans as well as computers! It also keeps your writing and results together, so if you collect some new data or change how you clean the data, you just have to re-compile the document and you're up to date!
@@ -52,7 +52,7 @@ When you click on File -> New File, there is an option for "R Markdown...". Choo
 Markdown also supports LaTeX equation editing.
 We can display pretty equations by enclosing them in `$`,
 e.g., `$\alpha = \dfrac{1}{(1 - \beta)^2}$` renders as:
-$\alpha = \dfrac{1}{(1 - \beta)^2}$
+$\\alpha = \\dfrac{1}{(1 - \\beta)^2}$
 
 The top of the source (.Rmd) file has some header material in YAML format (enclosed by triple dashes).
 Some of this gets displayed in the output header, other of it provides formatting information to the conversion engine.
@@ -61,7 +61,7 @@ To distinguish R code from text, RMarkdown uses three back-ticks followed by `{r
 In RStudio, the keyboard shortcut to create a code chunk is <kbd>Command</kbd>\+<kbd>Option</kbd>\+<kbd>I</kbd> or <kbd>Ctrl</kbd>\+<kbd>Alt</kbd>\+<kbd>I</kbd>.
 
 A code chunk will set off the code and its results in the output document,
-but you can also print the results of code within a text block by enclosing code like so: ```r '\x60r code-here\x60'```.
+but you can also print the results of code within a text block by enclosing code like so: `r '\x60r code-here\x60'`.
 
 ```{challenge "45:1-51:14"}
 #' ## Use knitr to Produce a Report
@@ -74,5 +74,11 @@ but you can also print the results of code within a text block by enclosing code
 ```
 
 {% include links.md %}
+
+```{keypoints}
+#' - Use knitr to generate reports that combine text, code, and results.
+#' - Use Markdown to format text.
+#' - Put code in blocks delimited by triple back quotes followed by `{r}`.
+```
 
 

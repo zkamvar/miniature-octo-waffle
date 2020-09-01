@@ -1,15 +1,7 @@
 ---
-title: "Introduction to RStudio"
+title: Introduction to RStudio
 teaching: 15
 exercises: 0
-questions:
-- "How do I use the RStudio graphical user interface?"
-objectives:
-- "Get familiar with RStudio interface."
-- "Understand the difference between script file and console."
-- "Demonstrate useful shortcuts."
-keypoints:
-- "Using RStudio can make programming in R much more productive."
 source: Rmd
 ---
 
@@ -17,6 +9,16 @@ source: Rmd
 library('dovetail')
 
 # knitr_fig_path."09-supp-intro-rstudio-")
+```
+
+```{objectives}
+#' - Get familiar with RStudio interface.
+#' - Understand the difference between script file and console.
+#' - Demonstrate useful shortcuts.
+```
+
+```{questions}
+#' - How do I use the RStudio graphical user interface?
 ```
 
 Let's start by learning about our tool.
@@ -77,5 +79,9 @@ In RStudio, typing <kbd>Alt</kbd>\+<kbd>\-</kbd> (push <kbd>Alt</kbd>, the key n
 same time as the <kbd>\-</kbd> key) will write `<-` in a single keystroke.
 
 {% include links.md %}
+
+```{keypoints}
+#' - Using RStudio can make programming in R much more productive.
+```
 
 

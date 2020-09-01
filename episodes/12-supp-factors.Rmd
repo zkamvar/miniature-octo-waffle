@@ -1,18 +1,7 @@
 ---
-title: "Understanding Factors"
+title: Understanding Factors
 teaching: 20
 exercises: 0
-questions:
-- "How is categorical data represented in R?"
-- "How do I work with factors?"
-objectives:
-- "Understand how to represent categorical data in R."
-- "Know the difference between ordered and unordered factors."
-- "Be aware of some of the problems encountered when using factors."
-keypoints:
-- "Factors are used to represent categorical data."
-- "Factors can be *ordered* or *unordered*."
-- "Some R functions have special methods for handling factors."
 source: Rmd
 ---
 
@@ -20,6 +9,17 @@ source: Rmd
 library('dovetail')
 
 # knitr_fig_path."12-supp-factors-")
+```
+
+```{objectives}
+#' - Understand how to represent categorical data in R.
+#' - Know the difference between ordered and unordered factors.
+#' - Be aware of some of the problems encountered when using factors.
+```
+
+```{questions}
+#' - How is categorical data represented in R?
+#' - How do I work with factors?
 ```
 
 Factors are used to represent categorical data. Factors can be ordered or
@@ -242,5 +242,11 @@ plot(x = dat$Gender, y = dat$BloodPressure)
 ````
 
 {% include links.md %}
+
+```{keypoints}
+#' - Factors are used to represent categorical data.
+#' - Factors can be *ordered* or *unordered*.
+#' - Some R functions have special methods for handling factors.
+```
 
 
