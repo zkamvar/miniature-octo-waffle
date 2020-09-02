@@ -8,6 +8,7 @@ get it to a point where it will be identical without using Jekyll.
 To render this lesson, first clone it and then use [{sandpaper}] to render it
 
 ```r
+remotes::install_github("zkamvar/sandpaper", dep = TRUE)
 usethis::create_from_github("zkamvar/miniature-octo-waffle", "~/Desktop")
 ## you will be moved to that directory
 
@@ -32,7 +33,6 @@ sandpaper::create_lesson("~/Desktop/new-rni")
 
 system("cp -R ~/Desktop/rni/_episodes_rmd/* ~/Desktop/new-rni/episodes")
 
-## remove source(dvt_opts()) command
 ## change ../fig to fig
 ## change latex link to latex equation
 ```
