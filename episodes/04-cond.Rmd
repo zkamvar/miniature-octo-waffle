@@ -13,6 +13,7 @@ library('dovetail')
 
 ```{objectives}
 #' - Save plot(s) in a PDF file.
+#' - Have fun.
 #' - Write conditional statements with `if` and `else`.
 #' - Correctly evaluate expressions containing `&&` ('and') and `||` ('or').
 ```
