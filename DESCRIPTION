@@ -1,0 +1,13 @@
+Package: lesson
+Title: Programming with R
+Version: 1.0.0
+Authors@R: 
+    person(given = c("Zhian", "N."),
+           family = "Kamvar",
+           role = c("aut", "cre"),
+           email = "zkamvar@gmail.com")
+Maintainer: {{ Maintainer }}
+Description: Lesson Template (not a real package).
+License: CC-BY 4.0
+URL: {{ URL }}
+Encoding: UTF-8
