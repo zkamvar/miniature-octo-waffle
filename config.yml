@@ -7,7 +7,7 @@
 # dc: Data Carpentry
 # lc: Library Carpentry
 # cp: Carpentries (to use for instructor traning for instance)
-carpentry: cp
+carpentry: swc 
 
 # Overall title for pages.
 title: Programming with R
@@ -36,3 +36,4 @@ schedule:
 - 13-supp-data-structures.Rmd
 - 14-supp-call-stack.Rmd
 - 15-supp-loops-in-depth.Rmd
+
