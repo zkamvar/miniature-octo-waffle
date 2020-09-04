@@ -19,6 +19,15 @@ life_cycle: alpha
 # License of the lesson
 license: CC-BY 4.0
 
+# Link to the source repository for this lesson
+source: https://github.com/zkamvar/miniature-octo-waffle
+
+# Default branch of your lesson
+branch: main
+
+# Who to contact if there are any issues
+contact: zkamvar@carpentries.org
+
 # Rearrange this schedule to match your lesson
 schedule:
 - 01-starting-with-data.Rmd
